@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />  
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+    .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #f06292;
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #212121;
+    display: block;
+    transition: 0.3s;
+    overflow: hidden;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+    overflow: hidden;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    overflow: hidden;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.bar{
+    width:1355px;
+    height:50px;    
+    background-color:#e91e63;
+    box-shadow:2px 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+  }
+  .bar:hover{
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .circle{
+          position: absolute;
+          width: 42px;
+          height: 42px;
+          overflow: hidden;
+          left: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          font-size: 1.5em;
+          color: #fff;
+          padding: 10px;
+        }
+        i
+  </style>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#!" class="brand-logo black-text"><i class="material-icons black-text">today</i>Today</a></br>
+      <a href="#!" class="brand-logo black-text"><i class="material-icons black-text">email</i>Inbox</a></br>
+    <a href="#!" class="brand-logo black-text"><i class="material-icons black-text">grade</i>Starred</a></br>
+    <a href="#!" class="brand-logo black-text"><i class="material-icons black-text">bookmark</i>Important</a></br>
+    <a href="#!" class="brand-logo black-text"><i class="material-icons black-text">drafts</i>Drafts</a></br>
+    <a href="#!" class="brand-logo black-text"><i class="material-icons black-text">send</i>Sent</a>
+  </div>
+<!-- Use any element to open the sidenav -->
+<nav>
+    <div class="nav-wrapper red red-text">    
+    <a href="#"  class="brand-logo">INBOX<i class="material-icons"  onclick="openNav()">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#"><i class="material-icons">view_module</i></a></li>
+      <li><a href="#"><i class="material-icons">refresh</i></a></li>
+      <li><a href="#"><i class="material-icons">people</i></a></li>
+      <li><a href="#"><i class="material-icons">search</i></a></li> 
+    </ul>   
+ </div>
+</nav>
+<div id="main">
+  <ul class="collection"> 
+        <li class="collection-item avatar email-unread">
+            <span class="circle red">G</span>
+            <span class="email-title"><b>Glassdoor</b></span>
+            <p class="truncate blue-text ultra-medium"><b>New Reviews:LinkedIn</b><br>
+            Glassdoor : Jobs|Reviews Sign in Get few mobile app 15updates from comparisons you &# following</p>
+            <a href="#" class="secondary-content email-time"><span class="blue-text ultra-small">03:48-July 05</span></a>
+        </li>
+        <li class="collection-item avatar email-unread">
+            <span class="circle orange">L</span>
+            <span class="email-title"><b>LinkedIn Invitations</b></span>
+            <p class="truncate blue-text ultra-medium"><b>See Shiyi's connections,experience and more</b><br>
+            Glassdoor : Jobs|Reviews Sign in Get few mobile app 15updates from comparisons you &# following</p>
+            <a href="#" class="secondary-content email-time"><span class="blue-text ultra-small">16:32-July 04</span></a>
+        </li>
+    <li class="collection-item avatar email-unread">
+            <span class="circle blue">G</span>
+            <span class="email-title"><b>Google Wallet</b></span>
+            <p class="truncate blue-text ultra-medium"><b>LinkedIn</b><br>
+            Glassdoor : Jobs|Reviews Sign in Get few mobile app 15updates from comparisons you &# following</p>
+            <a href="#" class="secondary-content email-time"><span class="blue-text ultra-small">00:50-July 03</span></a>
+        </li>
+        <li class="collection-item avatar email-unread">
+            <span class="circle green">T</span>
+            <span class="email-title"><b>Twitch</b></span>
+            <p class="truncate blue-text ultra-medium"><b>forgg just went live on Twitch</b><br>
+            Glassdoor : Jobs|Reviews Sign in Get few mobile app 15updates from comparisons you &# following</p>
+            <a href="#" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+        <li class="collection-item avatar email-unread">
+            <span class="circle orange">D</span>
+            <span class="email-title"><b>Dropbox</b></span>
+            <p class="truncate blue-text ultra-medium"><b>Get the most from Dropbox</b><br>
+            Glassdoor : Jobs|Reviews Sign in Get few mobile app 15updates from comparisons you &# following</p>
+            <a href="#" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+        <li class="collection-item avatar email-unread">
+            <span class="circle blue">H</span>
+            <span class="email-title"><b>Heroku</b></span>
+            <p class="truncate blue-text ultra-medium"><b>Manage your data with Heroku Postgres</b><br>
+            Glassdoor : Jobs|Reviews Sign in Get few mobile app 15updates from comparisons you &# following</p>
+            <a href="#" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+        <li class="collection-item avatar email-unread">
+            <span class="circle blue">H</span>
+            <span class="email-title"><b>Heouku</b></span>
+            <p class="truncate blue-text ultra-medium"><b>Extend your app in a couple of clicks with Heroku Add-ons</b><br>
+            Glassdoor : Jobs|Reviews Sign in Get few mobile app 15updates from comparisons you &# following</p>
+            <a href="#" class="secondary-content"><i class="material-icons">grade</i></a>
+        </li>
+      </ul>
+      <div class="fixed-action-btn">
+  <a class="btn-floating btn-large red" href="index1.html">
+    <i class="large material-icons">mode_edit</i>
+  </a>
+</div>
+  </body>
+  <script type="text/javascript">
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
+  </script>
+</html>
